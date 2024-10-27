@@ -11,13 +11,13 @@ static size_t	strlen(const char *s)
 	return (i);
 }
 
-char *strnrchr(char *s, int c, int orda)
+char *strnrchr(char *s, int c, int n)
 {
 	int i = strlen(s);
-	while(orda > 0)
+	while(n > 0)
 	{
 		if (s[i] == c)
-			orda--;
+			n--;
 		i--;
 	}
 	return (s + i + 1);
