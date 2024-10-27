@@ -13,6 +13,7 @@ char	*strnchr(char *s, int c, int n)
 	}
 	return (s + i - 1);
 }
+
 int main()
 {
 	char *str = "abracadabra";
