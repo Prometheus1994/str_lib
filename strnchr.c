@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-char	*strnchr(char *s, int c, int orda)
+char	*strnchr(char *s, int c, int n)
 {
 	int i = 0;
-	while(orda > 0)
+	while(n > 0)
 	{
 		if(s[i] == c)
 		{
-			orda--;
+			n--;
 		}
 		i++;
 	}
